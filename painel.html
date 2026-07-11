@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Desafios - Atlas Hub</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Chamada para o seu arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO REAPROVEITADO -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="img/icone.png" alt="Ícone Atlas Hub">
+                <div>Atlas <span>Hub</span></div>
+            </div>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item">Início</a>
+            <a href="cadastrar-demanda.html" class="nav-item">Nova Demanda</a>
+            <a href="painel.html" class="btn-nav">Painel de Desafios</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL: PAINEL -->
+    <main class="dashboard-container">
+
+        <div class="dashboard-header">
+            <h2>Desafios Disponíveis</h2>
+
+            <!-- Filtro visual (Não funcional no HTML estático, mas necessário para a interface) -->
+            <div class="filter-box">
+                <label for="filtroCategoria">Filtrar por:</label>
+                <select id="filtroCategoria">
+                    <option value="todos">Todas as Categorias</option>
+                    <option value="web">Desenvolvimento Web</option>
+                    <option value="desktop">Aplicativos Desktop</option>
+                    <option value="dados">Banco de Dados</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="redes">Redes/Infra</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- GRID DE CARTÕES (Demandas fictícias para a UC15) -->
+        <div class="cards-grid">
+
+            <!-- Cartão 1 -->
+            <div class="card">
+                <span class="badge badge-web">Desenvolvimento Web</span>
+                <h3 class="card-title">Sistema de Controle de Estoque</h3>
+                <p class="card-company">Empresa: <strong>Caixa Econômica</strong></p>
+                <p class="card-desc">Necessitamos de uma plataforma web responsiva para cadastrar, editar e excluir
+                    itens do nosso almoxarifado, com alertas de quantidade mínima.</p>
+
+                <a href="detalhes.html" class="btn-action"
+                    style="text-align: center; text-decoration: none; display: block; box-sizing: border-box;">Tenho
+                    Interesse</a>
+            </div>
+
+            <!-- Cartão 2 -->
+            <div class="card">
+                <span class="badge badge-desktop">Aplicativos Desktop</span>
+                <h3 class="card-title">Automação de Planilhas de RH</h3>
+                <p class="card-company">Empresa: <strong>TechCorp Brasil</strong></p>
+                <p class="card-desc">Criação de um software Windows Forms para ler dados de um arquivo Excel e gerar
+                    relatórios automáticos em PDF para o departamento pessoal.</p>
+                <button class="btn-action">Tenho Interesse</button>
+            </div>
+
+            <!-- Cartão 3 -->
+            <div class="card">
+                <span class="badge badge-dados">Banco de Dados</span>
+                <h3 class="card-title">Migração e Modelagem SQL</h3>
+                <p class="card-company">Empresa: <strong>Logística Express</strong></p>
+                <p class="card-desc">O desafio consiste em normalizar uma tabela antiga e criar as chaves estrangeiras
+                    corretas em um novo banco de dados SQL Server.</p>
+                <button class="btn-action">Tenho Interesse</button>
+            </div>
+            <!-- Cartão 4 -->
+            <div class="card">
+                <span class="badge badge-infra">Infraestrutura</span>
+                <h3 class="card-title">Configuração de Servidor Local</h3>
+                <p class="card-company">Empresa: <strong>Contabilidade Silva</strong></p>
+                <p class="card-desc">Precisamos interligar 10 computadores em uma rede local segura com um servidor de
+                    arquivos centralizado e rotina de backup automático.</p>
+                <a href="detalhes.html" class="btn-action"
+                    style="text-align: center; text-decoration: none; display: block; box-sizing: border-box;">Tenho
+                    Interesse</a>
+            </div>
+            <!-- Cartão 5 -->
+            <div class="card">
+                <span class="badge badge-suporte">Suporte Técnico</span>
+                <h3 class="card-title">Otimização e Limpeza de Hardware</h3>
+                <p class="card-company">Empresa: <strong>Clínica Odonto Bem</strong></p>
+                <p class="card-desc">Os computadores da recepção estão travando e muito lentos. Necessitamos de backup,
+                    formatação, instalação de SSDs e remoção de malwares.</p>
+                <a href="detalhes.html" class="btn-action"
+                    style="text-align: center; text-decoration: none; display: block; box-sizing: border-box;">Tenho
+                    Interesse</a>
+            </div>
+            <!-- Cartão 6 -->
+            <div class="card">
+                <span class="badge badge-web">Desenvolvimento Web</span>
+                <h3 class="card-title">Landing Page para Captação</h3>
+                <p class="card-company">Empresa: <strong>TechCorp Brasil</strong></p>
+                <p class="card-desc">Criação de uma página única responsiva (HTML/CSS) para captar e-mails de clientes,
+                    com integração direta para o nosso WhatsApp.</p>
+                <a href="detalhes.html" class="btn-action"
+                    style="text-align: center; text-decoration: none; display: block; box-sizing: border-box;">Tenho
+                    Interesse</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- RODAPÉ REAPROVEITADO -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-footer">Atlas <span>Hub</span></div>
+                </a>
+                <p>Conectando as demandas tecnológicas reais do mercado à força de desenvolvimento acadêmico.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>📧 contato@atlassolucoes.com</p>
+                <p>📞 (11) 90000-0000</p>
+                <p>📍 Senac Carapicuíba - SP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atlas Soluções. Todos os direitos reservados. Projeto Integrador.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

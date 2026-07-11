@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Hub - Conectando Empresas e Educação</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="img/icone.png" alt="Ícone Atlas Hub">
+                <div>Atlas <span>Hub</span></div>
+            </div>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item">Início</a>
+            <a href="cadastrar-demanda.html" class="nav-item">Nova Demanda</a>
+            <a href="painel.html" class="btn-nav">Painel de Desafios</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="hero-content">
+            <h1>Desafios reais de empresas.<br><span>Experiência real para alunos.</span></h1>
+            <p>O Atlas Hub centraliza os problemas tecnológicos do mercado de trabalho para serem resolvidos por
+                estudantes, conectando demandas represadas à força de desenvolvimento acadêmico.</p>
+
+            <ul class="benefits-list">
+                <li>Soluções em software sem custo para a empresa.</li>
+                <li>Projetos reais para alimentar o portfólio dos alunos.</li>
+                <li>Processo centralizado, validado e direto ao ponto.</li>
+            </ul>
+        </div>
+
+        <div class="form-wrapper">
+            <div class="form-container">
+                <h2>Cadastre sua Empresa</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="razaoSocial">Razão Social</label>
+                        <input type="text" id="razaoSocial" name="razaoSocial" placeholder="Ex: Atlas Soluções LTDA"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0001-00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo</label>
+                        <input type="email" id="email" name="email" placeholder="contato@suaempresa.com" required>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Avançar para Demandas</button>
+                </form>
+
+                <div class="student-access">
+                    <p>É aluno do Senac?</p>
+                    <a href="painel.html" class="btn-aluno">Acessar Painel com e-mail institucional →</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-footer">Atlas <span>Hub</span></div>
+                </a>
+                <p>Conectando as demandas tecnológicas reais do mercado à força de desenvolvimento acadêmico.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>📧 contato@atlassolucoes.com</p>
+                <p>📞 (11) 90000-0000</p>
+                <p>📍 Senac Carapicuíba - SP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atlas Soluções. Todos os direitos reservados. Projeto Integrador.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
