@@ -56,5 +56,4 @@ formulario.addEventListener('submit', function (evento) {
         alert('CNPJ validado com sucesso! Os dados estão prontos para ir para o Banco de Dados.');
         window.location.href = 'cadastrar-demanda.html';
     }
-    }
 });
